@@ -1,0 +1,42 @@
+/*
+* Header
+*/
+
+
+header{
+	background-color: $white!important;}
+
+.menu-navigation{
+	background-color: $white!important;
+	height: 100px;
+	width: 100%;
+}
+#menu{
+	color: $white;
+}
+
+.logo{
+	width: 135px;
+	height: auto;
+}
+
+.container-custom{
+	padding: 0px;
+}
+
+a.nav-link.js-scroll-trigger{
+	color: $nav-trigger;
+    font-size: 15px;
+    font-family: $font-family-light;
+	line-height: auto;
+	font-weight: $font-weight;
+  padding: 37px 0px 39px 300px;
+}
+
+a.nav-link.js-scroll-trigger:hover{
+	color: $light-sky-blue;
+    border-bottom: 1px solid  #99f3ff;
+}
+li.nav-item{
+	padding-left: 40px;
+}
