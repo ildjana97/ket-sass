@@ -1,0 +1,129 @@
+/*CARDS*/
+.card-awesome{
+	width: 368px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.pho{
+	color: rgb(63, 66, 68);
+	text-align: center;
+}
+
+.pho:after{
+display: block;
+height: 2px;
+content: "";
+background-color: rgb(0, 225, 255) ;
+width: 70px;
+margin: 25px auto;
+text-align: center;
+}
+
+.card-title, p.card-text{
+  font-size: 15px;
+  font-family: "Raleway Medium", sans-serif;
+  font-weight: 400;
+  color: rgb(63, 66, 68);
+  line-height: auto;
+}
+p.card-text{
+  font-size: 13px;
+  font-family: "Raleway Light", sans-serif;
+  font-weight: 400;
+  line-height: auto;
+  text-align: center;
+  padding-right: 8px;
+    padding-left: 8px;
+}
+
+.p-pho{
+	color: rgb(146, 155, 160);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+
+.card-body.icons{
+    height: 60px;
+    padding: 0px 0px;
+  border-top: 1px  solid white;
+}
+
+.icons.i{
+  background-color: transparent;
+
+}
+
+.cards{
+  margin-bottom: 100px;
+}
+
+div.card.card-dsgn{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+img.card-img-top.dsg{
+  height: 140px;
+}
+
+.card-dsgn:hover #i1{
+  background-color: $card-hover-blue;
+}
+
+.card-dsgn:hover #i2{
+  background-color: $card-hover-sky;
+}
+
+.card-dsgn:hover #i3{
+  background-color: $card-hover-red;
+}
+.card-dsgn:hover #i4{
+  background-color: $card-hover-pink;
+}
+
+.card-dsgn:hover #i1, .card-dsgn:hover #i2, .card-dsgn:hover #i3, .card-dsgn:hover #i4{
+  @include white;
+}
+
+div#i1.col-3, div#i2.col-3, div#i3.col-3, div#i4.col-3{
+  display: inline;
+}
+
+img.card-img-top{
+  height: 345px;
+}
+
+.client-card{
+margin-bottom: 90px;
+  font-size: 13px;
+  font-family: $font-family-thin;
+  font-weight: $font-weight;
+  color: $light-gray;
+  line-height: auto;
+  text-align: center;
+}
+
+p.card-text.client-card{
+padding: 0px 15px;
+margin-bottom: 60px;
+}
+
+.card-2{
+  margin-left: 15px;
+  margin-right: 14px;
+}
+
+.card-1{
+  margin-right: 15px;
+}
+
+.card-3{
+  margin-left: 15px;
+}

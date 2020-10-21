@@ -57,7 +57,7 @@ function openCity(evt, cityName) {
               var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(33.770050, -118.193741),
                 map: map,
-                icon: './assets/images/PIN.png',
+                icon: './css/images/PIN.png',
                /* label: {   fontsize: '15px',
                             fontfamily: 'Raleway Medium',
                             fontweight: '400',

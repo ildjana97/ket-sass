@@ -102,3 +102,98 @@
 		align-items: center;
 	}
 }
+
+
+@mixin important-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: auto
+}
+
+@mixin margins{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin paddings{
+	padding-left: auto;
+	padding-right: auto;
+}
+
+@mixin white{
+color: $white;
+}
+
+@mixin responsive{
+  font-size: 15px;
+  font-family: "Raleway Light", sans-serif;
+  color: rgb(146, 155, 160);
+  line-height: auto;
+  text-align: left;
+}
+
+
+@mixin portfolio{
+  font-size: 40px;
+  font-family: "Raleway";
+  color: rgb(63, 66, 68);
+  line-height: auto;
+}
+
+@mixin portfolio-after{
+display: block;
+height: 2px;
+content: "";
+background-color: rgb(0, 225, 255) ;
+width: 170px;
+margin: 25px auto;
+text-align: center;
+}
+
+@mixin p-portfolio{
+font-size: 13px;
+  font-family: "Raleway Light", sans-serif;
+  line-height: auto;
+  font-weight: 400;
+  text-align: center;
+}
+
+@mixin video{
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: auto;
+}
+
+@mixin p-video{
+  font-size: 13px;
+  font-family: "Raleway Light", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: auto;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+@mixin number{
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: auto;
+}
+
+@mixin padding{
+	padding-left: 20px;
+    padding-right: 20px;
+}
+
+@mixin wrapper {
+	 display: block;
+    height: 9px;
+    content: "";
+    background-color: $white;
+    width: 2px;
+    margin: 0;
+    text-align: center;
+    bottom: 0px;
+    position: absolute;
+}

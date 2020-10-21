@@ -40,3 +40,11 @@ a.nav-link.js-scroll-trigger:hover{
 li.nav-item{
 	padding-left: 40px;
 }
+
+.sticky {
+    background-color: $white;
+    width: 100%;
+}
+
+i.fa.fa-fw.fa-home, i.fa.fa-briefcase, i.fa.fa-newspaper-o, i.fa.fa-fw.fa-envelope
+{display: none;}
