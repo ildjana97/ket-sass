@@ -197,3 +197,561 @@ font-size: 13px;
     bottom: 0px;
     position: absolute;
 }
+
+@mixin transition{
+	 transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+
+/*
+@mixin media-xlg{
+	@media screen & (max-width: 1280px){
+		 body{
+        overflow-x: hidden;
+    }
+    .bannertitle {
+        font-size: 44px;
+    }
+
+    .btn-outline-primary, .btn-outline-secondary {
+    padding: 20px 178px;
+    }
+
+    .fully-responsive {
+    padding-left: 20px;}
+         
+    div#i1.col-3{
+       padding-left: 22px!important;
+        padding-right: 16px!important;
+    }
+
+    div#i2.col-3{
+        padding-left: 16px!important;
+        padding-right: 16px!important;
+    }
+    div#i3.col-3{
+       padding-left: 16px!important;
+        padding-right: 16px!important;
+    }
+    div#i4.col-3{
+       padding-left: 16px!important;
+        padding-right: 22px!important;
+    }
+	}
+}
+
+
+@mixin media-lg{
+	@media screen & (max-width: 1024px){
+		body{
+        overflow-x: hidden;
+    }
+    
+      .input-group-append {
+    width: 50%;}
+
+    div.tab{
+     width: 100%; }
+    
+    .container-custom {
+    padding: 0px 0px;
+    }
+
+    .btn-outline-primary, .btn-outline-secondary {
+        width: 100%;
+        padding: 20px 123px;
+    }
+
+    .fully-responsive {
+        width: 125%;
+        height: 100%;
+        margin-top: 120px;
+        padding-left: 40px;
+    }
+    
+    .timeline:before {
+    bottom: 274px;}
+
+    p.card-text {
+    padding-right: 0px;
+    padding-left: 0px;
+    }
+
+    .modern_design {
+    padding-left: 40px;
+    margin-top: 116px;
+    }
+
+    img.img-modern-design{
+    width: 283%;
+    height: auto;
+    }
+
+    img.screen {
+    left: 64%;
+    }
+
+    div#i1.col-3, div#i2.col-3, div#i3.col-3, div#i4.col-3{
+      padding-top: 17px!important;
+      padding-bottom: 21px!important;
+    }
+
+    div#i1.col-3{
+       padding-left: 13px!important;
+        padding-right: 9px!important;
+    }
+
+    div#i2.col-3{
+        padding-left: 9px!important;
+        padding-right: 9px!important;
+    }
+    div#i3.col-3{
+       padding-left: 9px!important;
+        padding-right: 9px!important;
+    }
+    div#i4.col-3{
+       padding-left: 9px!important;
+        padding-right: 13px!important;
+    }
+
+  }
+}
+
+
+@mixin media-lg{
+	@media screen & (max-width: 768px){
+		i.fa.fa-fw.fa-home, i.fa.fa-briefcase, i.fa.fa-newspaper-o, i.fa.fa-fw.fa-envelope
+    {display: inline;}
+
+     .navbar-nav .dropdown-menu {
+    position: static;
+    float: right;
+    padding-left: 0rem;
+    }
+
+    .container-custom {
+    padding: 25px 0px;
+    }
+
+    .dropdown-item {
+    background-color: #81c7dc;
+    color: #ffffff;
+    padding: 2px 304px 2px 345px;
+    clear: right;
+    overflow-x: hidden;
+    }
+
+    .dropdown-menu {
+     padding: 0; 
+     margin:  0 0; 
+    border: 0px solid rgba(0,0,0,.15); 
+    border-radius: 0rem; 
+    }
+
+    li.nav-item {
+    padding-left: 0px;
+    }
+
+     body{
+        overflow-x: hidden;
+    }
+    
+    .input-group{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .p1-about, .p2-about {
+    font-size: 12px;}
+
+    .about {
+    padding-top: 20px;
+    margin-bottom: 20px;}
+
+    .p2-about {
+    margin-bottom: 25px;
+    }
+
+    .dsgn:after {
+    margin: 15px 0px 15px 0px;}
+
+    h3.responsive {
+    font-size: 32px;
+    width: 129%;
+    }
+
+    .news-text {
+    overflow-x: hidden;}
+
+      div#i1.col-3, div#i2.col-3, div#i3.col-3, div#i4.col-3{
+      padding-top: 6px!important;
+      padding-bottom: 6px!important;
+    }
+
+    div#i1.col-3{
+       padding-left: 15px!important;
+        padding-right: 5px!important;
+    }
+
+    div#i2.col-3{
+        padding-left: 5px!important;
+        padding-right: 5px!important;
+    }
+    div#i3.col-3{
+       padding-left: 5px!important;
+        padding-right: 5px!important;
+    }
+    div#i4.col-3{
+       padding-left: 5px!important;
+        padding-right: 8px!important;
+    }
+    .beige{
+    padding: 10px 10px;
+    }
+
+    p.card-text {
+    font-size: 11px;}
+
+    img.card-img-top.dsg {
+    height: 110px;}
+
+    .box {
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+
+
+    a.nav-link.js-scroll-trigger:hover {
+    color: #212529;
+    border-bottom: 1px solid #212529;
+    background-color: azure;
+    }
+
+    a.nav-link.js-scroll-trigger{
+    color: #ffffff;
+    background-color: #81c7dc;
+    padding: 28px 0px 28px 300px;
+    }
+
+
+    .btn-outline-primary, .btn-outline-secondary{
+        width: 100%;
+        padding: 20px 30px;
+    }
+    
+   
+    img.img-modern-design {
+    width: 480px;
+    height: auto;
+    margin-left: -35px;
+    padding-left: 56px;
+    }
+    
+    .p1-news {
+    padding-left: 30px;
+    }
+
+    .p1-more {
+    padding-right: 30px;
+    }
+
+   .p1-more:after {
+    width: 480px;
+    }
+    
+    div.card.card-1, div.card.card-2, div.card.card-3{
+    overflow-x: hidden;
+ 
+   }
+    
+    div.card.card-3{
+        margin-left: 0px;
+    }
+
+    div.card.card-2{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    div.card.card-1{
+        margin-right: 0px;
+    }
+
+    .client-sayings {
+    overflow-x: hidden;}
+
+    .video {
+    font-size: 38px;
+    }
+
+    .btn-all, .btn-web, .btn-photo, .btn-gd {
+    padding: 20px 22px;
+    }
+
+    .kat-p {
+    width: 92%;
+    }
+
+    .p-portfolio, .p-video, .p-designers {
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+
+    .card-awesome{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+   .fully-responsive {
+    width: 70%;
+    height: 100%;
+    margin-top: 100px;
+    padding-left: 0px;
+    }
+
+    .timeline:before {
+    bottom: 323px;}
+
+    .section-responsive {
+    padding-bottom: 60px;}
+
+    div.card.card-dsgn {
+    margin-left: 25px;
+    margin-right: 25px;
+    overflow-y: hidden;
+    }
+
+    .two-phones {
+    width: 257px;
+    margin-left: -15px;
+    }
+
+    p.p-res {
+    width: 150%;}
+
+    h3.responsive {
+    font-size: 34px;}
+
+    
+    img.screen {
+    left: 26%;
+    top: 47%;
+    width: 31%;
+    height: 68%;
+    }
+
+    .class-features {
+    margin-bottom: 65px;
+    margin-top: 70px;
+    }
+
+    .p-client, .p-news{
+    padding-left: 15px;
+    padding-right: 15px;}
+
+    .p1-news{
+    padding-left: 30px;
+    padding-right: 30px;}
+
+    .form-group {
+    padding-left: 20px;
+    padding-right: 20px;}
+
+   .modern_design {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 110px;
+    margin-bottom: 60px;
+    }
+
+    div.cards{
+    overflow-x: hidden;
+    }
+
+    .newsletter {
+    font-size: 18px;}
+
+     .input-group-append {
+    width: 50%;}
+
+    div.tab{
+     width: 100%; }
+    
+    .entry .title h3 {
+    padding-left: 20px;}
+
+    }
+}
+
+@mixin media-lg{
+	@media screen & (max-width: 480px){
+
+		body{
+        overflow-x: hidden;
+    }
+    
+    div.timeline{
+        overflow-x: hidden;
+    }
+
+     .class-numbers {
+        display: block;
+    }
+
+    li.nav-item {
+    padding-left: 0px;
+    }
+
+    .input-group-append {
+    width: 50%;}
+
+    div.tab{
+     width: 100%; }
+
+
+    a.nav-link.js-scroll-trigger:hover {
+    color: #212529;
+    border-bottom: 1px solid #212529;
+    background-color: azure;
+    }
+
+    .two-phones {
+    width: 230px;
+    margin-left: 10px;
+    }
+
+    .fully-responsive {
+    padding-left: 15px;
+    padding-top: 60px;
+    }
+
+    img.img-modern-design {
+    width: 313px;}
+
+    .see-video, .modern-design, .p-news, .p-client{
+    padding-left: 15px;
+    padding-right: 15px;}
+
+    .p1-news {
+    padding-left: 30px;
+    padding-right: 15px;}
+
+    .timeline:before {
+    bottom: 143px;
+    }
+
+    .p-tab {
+    font-size: 14px;}
+
+     .btn-outline-primary, .btn-outline-secondary{
+        width: 100%;
+        padding: 20px 8px;
+        font-size: 14px;
+    }
+
+    img.screen {
+    left: 41%;}
+
+    .btn-all, .btn-web, .btn-photo, .btn-gd {
+    padding: 20px 0px;
+    }
+
+    .p1-news {
+    overflow-x: hidden
+    padding-left: 30px;
+    }
+
+    .news-text {
+    overflow-x: hidden;}
+
+    .p1-more {
+    padding-right: 28px;
+    }
+
+   .p1-more:after {
+    width: 280px;
+    }
+
+    .newsletter {
+    font-size: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+    
+    .p-contact, p.p-portfolio{
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+
+    .card-awesome {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;}
+
+    p.p-res {
+    font-size: 14px;}
+
+    .btn-start {
+    padding: 10px 10px;
+    }
+
+    .class-features {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    }
+    .kat-p {
+    font-size: 11px;
+    padding-right: 20px;
+    width: 104%;}
+    
+    div.card.card-dsgn {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;}
+
+
+      .parallax .row{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .artist {
+    font-size: 17px;}
+
+    .entry .title h3 {
+    font-size: 15px;
+    padding-left: 20px;
+    }
+  
+   
+    .ml-auto {
+    margin-top: 29px;}
+  
+
+    a.nav-link.js-scroll-trigger button.dropdown-btn:hover{
+      color: #99f3ff;
+        
+    }
+
+    i.fa.fa-fw.fa-home, i.fa.fa-briefcase, i.fa.fa-newspaper-o, i.fa.fa-fw.fa-envelope
+    {display: inline;}
+
+    .dropdown-item {
+        background-color: #81c7dc;
+        color: #ffffff;
+        padding: 2px 290px 2px 61px;
+    }
+
+    a.nav-link.js-scroll-trigger {
+        padding: 21px 19px 21px 39px;
+        color: #ffffff;
+    }
+   
+    .dropdown-menu {
+    position: static;
+    }
+    
+    }
+}
+*/

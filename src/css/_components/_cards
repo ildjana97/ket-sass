@@ -1,12 +1,56 @@
 /*CARDS*/
+
+.card-awesome .image-carousel-item{
+  position: relative;
+  display: block;
+}
+.card-awesome .image-carousel-item:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,255,255,0.5);  
+  display: block;
+  opacity: 0;
+  @include transition;}
+
+.card-awesome:hover .image-carousel-item:after{
+  opacity: 1;
+  @include transition;
+}
+
+
+.card-awesome svg{
+  position: relative;
+}
+
+
+
+.card-awesome:hover svg.svg-carousel{
+  opacity: 1;
+  display: block;
+  @include transition;
+}
+
+div.image-carousel-item svg{
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;} 
+
+
 .card-awesome{
-	width: 368px;
-	margin-left: 6px;
-	margin-right: 6px;
+	width: 368px!important;
+	margin-left: 6px!important;
+	margin-right: 6px!important;
 }
 
 .pho{
-	color: rgb(63, 66, 68);
+	color: $dark-gray;
 	text-align: center;
 }
 
@@ -14,7 +58,7 @@
 display: block;
 height: 2px;
 content: "";
-background-color: rgb(0, 225, 255) ;
+background-color: $light-blue ;
 width: 70px;
 margin: 25px auto;
 text-align: center;
@@ -22,9 +66,9 @@ text-align: center;
 
 .card-title, p.card-text{
   font-size: 15px;
-  font-family: "Raleway Medium", sans-serif;
-  font-weight: 400;
-  color: rgb(63, 66, 68);
+  font-family: $font-family-medium;
+  font-weight: $font-weight;
+  color: $dark-gray;
   line-height: auto;
 }
 p.card-text{
@@ -75,17 +119,21 @@ img.card-img-top.dsg{
 
 .card-dsgn:hover #i1{
   background-color: $card-hover-blue;
+  color: $white;
 }
 
 .card-dsgn:hover #i2{
   background-color: $card-hover-sky;
+  color: $white;
 }
 
 .card-dsgn:hover #i3{
   background-color: $card-hover-red;
+  color: $white;
 }
 .card-dsgn:hover #i4{
   background-color: $card-hover-pink;
+  color: $white;
 }
 
 .card-dsgn:hover #i1, .card-dsgn:hover #i2, .card-dsgn:hover #i3, .card-dsgn:hover #i4{
@@ -94,6 +142,61 @@ img.card-img-top.dsg{
 
 div#i1.col-3, div#i2.col-3, div#i3.col-3, div#i4.col-3{
   display: inline;
+}
+
+
+div#i1.col-3, div#i2.col-3, div#i3.col-3, div#i4.col-3{
+  padding-top: 20px;
+  padding-bottom: 21px;
+}
+
+div#i2.col-3, div#i3.col-3{
+@include media-down(lg) {
+    padding-left: 16px!important;
+    padding-right: 16px!important;
+   }
+@include media-down(lg) {
+    padding-left: 9px!important;
+    padding-right: 9px!important;
+   }
+}
+
+div#i4.col-3{
+@include media-down(lg) {
+    padding-left: 16px!important;
+    padding-right: 22px!important;
+   }
+@include media-down(lg) {
+    padding-left: 9px!important;
+    padding-right: 13px!important;
+   }
+}
+
+
+div#i1.col-3{
+  padding-left: 24px;
+  padding-right: 23px;
+  @include media-down(lg) {
+    padding-left: 22px!important;
+    padding-right: 16px!important;
+   }
+   @include media-down(md) {
+    padding-left: 13px!important;
+    padding-right: 9px!important;
+   }
+}
+
+ div#i2.col-3, div#i3.col-3, div#i4.col-3{
+    padding-left: 24px;
+    padding-right: 22px;
+  @include media-down(md) {
+   padding-top: 17px!important;
+   padding-bottom: 21px!important; 
+  }
+  @include media-down(sm) {
+   padding-top: 6px!important;
+   padding-bottom: 6px!important; 
+  }
 }
 
 img.card-img-top{
@@ -113,6 +216,10 @@ margin-bottom: 90px;
 p.card-text.client-card{
 padding: 0px 15px;
 margin-bottom: 60px;
+@include media-down(md) {
+  padding-right: 0px;
+    padding-left: 0px;
+ }
 }
 
 .card-2{

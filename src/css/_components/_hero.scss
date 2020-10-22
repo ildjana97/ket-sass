@@ -32,4 +32,7 @@
 	font-family: $font-family-extralight;
 	line-height: auto;
 	font-weight: $font-weight;
+	@include media-down(lg) {
+		font-size: 44px;
+	}
 }

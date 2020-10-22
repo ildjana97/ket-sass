@@ -1,58 +1,4 @@
-/*button {
-	font: inherit;
-}
 
-%btn {
-	display: inline-block;
-	padding: 0;
-	border: none;
-	outline: none;
-	background: none;
-	appearance: none;
-	cursor: pointer;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	transition: ease-in-out 350ms;
-	transition-property: background-color, color, border, opacity;
-
-	&,
-	&:active,
-	&:focus,
-	&:hover,
-	&:visited {
-		color: inherit;
-		text-decoration: none;
-		outline: none;
-	}
-
-	/*
-	&:hover {
-		box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.15);
-	}
-	
-
-  
-	&[disabled] {
-		opacity: 0.5;
-		pointer-events: none;
-	}
-}
-
-a,
-button,
-.btn {
-	@extend %btn;
-}
-
-.btn--link {
-	padding: 0 8px;
-	font-weight: $font-medium;
-
-	&:hover {
-		background: $background-tertiary;
-	}
-}
-
-*/
 
 /*My buttons*/
 
@@ -63,6 +9,7 @@ border: 1px solid $white;
 
 a.btn.btn-full, .btn.btn-full {
 	color: $white;
+  border: 1px solid white;
 }
 
 a.btn.btn-full:hover {
@@ -71,11 +18,37 @@ a.btn.btn-full:hover {
     transition: all .3s ease-in-out;
 }
 
+button.btn.btn-message {
+    background-color: $background-2;
+    border: 1px solid $light-blue;
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    border-radius: 0px;
+    margin-bottom: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: $white;
+}
 
 .btn.btn-message:hover, a.btn.btn-start:hover, .btn.btn-subscribe:hover {
     background: $light-blue!important;
     color: $white !important;
     transition: all .3s ease-in-out;
+}
+
+button.button.btn.btn-subscribe {
+    text-align: center;
+   @include margins;
+    margin-top: 45px;
+    margin-bottom: 95px;
+    border: 1px solid $light-blue;
+    font-size: 13px;
+    font-family: $font-family;
+    color: $white;
+    line-height: auto;
+    padding: 15px 47px;
+    display: block;
 }
 
 .btn.btn-subscribe{
@@ -142,7 +115,23 @@ button.btn-triangle-active.active:after, .btn-triangle-active.active:after, .btn
   background-color: $background-2;
   font-family: $font-family-medium;
   color: $dark-gray;
-  padding: 20px 190px;
+  padding: 20px 190px!important;
+  @include media-down(lg) {
+    padding: 20px 178px;
+   }
+  @include media-down(md) {
+    width: 100%;
+    padding: 20px 123px;
+    font-size: 14px!important;
+  }
+  @include media-down(sm) {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  @include media-down(x-sm) {
+    width: 100%;
+    padding: 20px 22px;
+  }
 }
 
 
@@ -155,27 +144,24 @@ padding: 15px 40px;
 
 .btn-all, .btn-web, .btn-photo, .btn-gd{
   display: inline-block;
-  font-size: 13px;
-  font-family: $font-family;
+  font-size: 13px!important;
+  font-family: $font-family!important;
   line-height: auto;
   border: 0px;
   margin-top: 80px;
   margin-bottom: 80px;
-  padding: 20px 30px;
+  padding: 20px 30px!important;
+  border: 0px!important;
+
 }
 
 .btn-all:hover, 
 .btn-web:hover, 
 .btn-photo:hover, 
 .btn-gd:hover{
- border: 1px solid $light-blue;
+ border: 1px solid $light-blue!important;
 }
 
-
-.button.is-checked {
-  color: $white;
-  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
-}
 
 .button:active {
   box-shadow: inset 0 1px 10px   $light-blue;;
@@ -194,6 +180,9 @@ padding: 15px 40px;
   @include margins; 
 }
 
+.filters-button-group{
+  @include margins;
+}
 
 button.btn.btn-primary{
   background-color: $background-2;
