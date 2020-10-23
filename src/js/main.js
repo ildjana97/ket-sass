@@ -12,7 +12,7 @@ export default class Main {
 
 		const messageNode = document.createElement('div');
 		messageNode.innerHTML = /* html */ `<p>
-			I'm an ES6 module! <a class="btn--link" href="https://developer.mozilla.org/it/docs/Web/JavaScript/ECMAScript_6_support_in_Mozilla" target="_blank">ES6</a>
+			
 		</p>`;
 		mainContainerNode.appendChild(messageNode);
 	}

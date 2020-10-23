@@ -16,7 +16,7 @@ var main=(function(){'use strict';var Main = function () {
     body.classList.add('ready');
     var mainContainerNode = document.querySelector('main .container');
     var messageNode = document.createElement('div');
-    messageNode.innerHTML = "<p>\n\t\t\tI'm an ES6 module! <a class=\"btn--link\" href=\"https://developer.mozilla.org/it/docs/Web/JavaScript/ECMAScript_6_support_in_Mozilla\" target=\"_blank\">ES6</a>\n\t\t</p>";
+    messageNode.innerHTML = "<p>\n\t\t\t\n\t\t</p>";
     mainContainerNode.appendChild(messageNode);
   };
 

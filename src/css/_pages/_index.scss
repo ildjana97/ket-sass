@@ -21,6 +21,15 @@ body{
   text-align: center;
   margin-bottom: 140px;
   margin-top: 130px;
+  @include media-down(sm) {
+   margin-bottom: 65px;
+    margin-top: 70px;
+}
+@include media-down(xs) {
+   margin-bottom: 50px;
+    margin-top: 50px;
+}
+
 }
 
 h3.section1{
@@ -55,10 +64,19 @@ p.section1{
 .section-responsive{
 background-color: $extralight-gray;
 overflow-y: hidden;
+@include media-down(sm) {
+  padding-bottom: 60px;
+}
 }
 
 .input-group-append {
 @include media-down(md) {
+  width: 50%;
+}
+@include media-down(sm) {
+  width: 50%;
+}
+@include media-down(xs) {
   width: 50%;
 }
 }
@@ -74,6 +92,12 @@ overflow-y: hidden;
 
 div.tab{
 @include media-down(md) {
+  width: 100%;
+}
+@include media-down(sm) {
+  width: 100%;
+}
+@include media-down(xs) {
   width: 100%;
 }
 }
@@ -100,12 +124,21 @@ h3.responsive{
    	font-size: 32px;
     width: 129%;
    }
+   @include media-down(sm) { 
+ font-size: 34px;
+}
 }
 
 p.p-res{
  @include responsive;
   width: 103%;
   margin-bottom: 40px;
+@include media-down(sm) { 
+  width: 150%;
+}
+@include media-down(xs) { 
+ font-size: 14px;
+}
 }
 
 .p-tab{
@@ -113,11 +146,22 @@ p.p-res{
   margin-top: 40px;
   width: 86%;
   margin-bottom: 40px;
+  @include media-down(xs) { 
+ font-size: 14px;
+}
 }
 
 .two-phones{
 	margin-top: 85px;
 	margin-bottom: -85px;
+  @include media-down(sm) { 
+    width: 257px;
+    margin-left: -15px;
+}
+@include media-down(xs) { 
+    width: 230px;
+    margin-left: 10px;
+}
 }
 
 .fully-responsive{
@@ -132,6 +176,16 @@ margin-top: 120px;
     margin-top: 120px;
     padding-left: 40px;
 }
+@include media-down(sm) {
+  width: 70%;
+    height: 100%;
+    margin-top: 100px;
+    padding-left: 0px;
+}
+@include media-down(xs) {
+padding-left: 15px;
+    padding-top: 60px;
+}
 }
 
 /*SECTION-GOOGLE*/
@@ -143,9 +197,15 @@ margin-top: 120px;
 	text-align: center;
 @include margins;
 @include media-down(md) {
-	padding-left: 40px;
-    margin-top: 116px;
+	padding-left: 20px!important;
+    margin-top: 135px!important;
     }
+@include media-down(sm) {
+    margin-top: 110px;
+    margin-bottom: 60px; 
+    padding-left: 20px!important;
+    padding-right: 20px!important; 
+}
 }
 
 
@@ -154,6 +214,20 @@ img.img-modern-design{
     width: 283%;
     height: auto;
     }
+@include media-down(sm) {
+   width: 480px;
+    height: auto;
+    margin-left: -35px;
+    padding-left: 56px;
+    }
+@include media-down(xs) {
+   width: 313px;}
+}
+
+.see-video, .modern-design, .p-news, .p-client{
+  @include media-down(xs) {
+    padding-left: 15px;
+    padding-right: 15px;}
 }
 
 .design{
@@ -186,6 +260,10 @@ img.img-modern-design{
 /*Section-timeline*/
 .section-timeline, .section-news, .section-designers, .section-clients{
 background-color: $white;
+@include media-down(xs) {
+    overflow-x: hidden;
+  }
+
 }
 
 .timeline {
@@ -194,6 +272,10 @@ background-color: $white;
   background: $white;
   padding: 125px 0px;
   position: relative;
+   @include media-down(xs) {
+    overflow-x: hidden;
+  }
+
 }
 
 .timeline:before {
@@ -206,6 +288,12 @@ background-color: $white;
   width: 1px;
   @include media-down(md) {
   	bottom: 274px;
+  }
+   @include media-down(sm) {
+    bottom: 323px;
+  }
+ @include media-down(xs) {
+     bottom: 143px;
   }
 }
 
@@ -248,6 +336,13 @@ background-color: $white;
   font-family: $font-family;
   color: $light-blue ;
   line-height: auto;
+   @include media-down(sm) {
+   padding-left: 20px;
+   }
+   @include media-down(xs) {
+   font-size: 15px;
+    padding-left: 20px;
+   }
  }
 
 .title p {
@@ -303,6 +398,14 @@ background-color: $white;
   line-height: auto;
   width: 113%;
   margin-bottom: 26px;
+  @include media-down(sm) {
+ width: 92%;
+}
+ @include media-down(xs) {
+ font-size: 11px;
+ padding-right: 20px;
+ width: 104%;
+}
 }
 
 .kat-p2, .kat-p1, .kat-p3,.kat-p4{
@@ -359,6 +462,13 @@ div.vertical-timeline{
 
 }
 
+.p-portfolio, .p-video, .p-designers {
+  @include media-down(sm) {
+   padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 
 div.row.grid{
     overflow-x: hidden;
@@ -410,7 +520,7 @@ img.card-img-top::after{
 }
 
 .modal-dialog {
-    max-width: 1905px;
+    max-width: 1905px!important;
     margin: 0px;
 }
 .see-video{
@@ -421,7 +531,15 @@ img.card-img-top::after{
 
 .video{
  @include video;
+ @include media-down(sm) {
+    font-size: 38px;
+  }
 
+}
+
+ .ml-auto {
+   @include media-down(xs) {
+    margin-top: 29px;}
 }
 
 .video:after{
@@ -450,6 +568,9 @@ img.card-img-top::after{
 	margin-top: 70px;
 	width: 100%;
 	display: inline-flex;
+   @include media-down(xs) {
+   display: block;
+   }
 }
 
 .number-icon{
@@ -522,6 +643,11 @@ p.card-text.graphic{
 	width: 100%;
 }
 
+.beige{
+  @include media-down(sm) {
+  padding: 10px 10px;
+  }
+}
 .par{
 text-align: center;
 }
@@ -554,7 +680,7 @@ text-align: center;
   margin-bottom: 42px;
   @include media-down(sm) {
   	padding-top: 20px;
-    margin-bottom: 20px;};
+    margin-bottom: 20px;
   }
 }
 
@@ -582,6 +708,10 @@ text-align: center;
   border: 1px solid  $light-gray;
   padding-left: 27px;
   padding-right: 27px;
+   @include media-down(sm) {
+  padding-left: 20px;
+  padding-right: 20px;
+  }
 }
 
 img.card-img-top{
@@ -606,6 +736,9 @@ img.card-img-top{
   font-family: $font-family-medium;
   font-weight: $font-weight;
   color: $white;
+   @include media-down(xs) {
+   font-size: 17px;
+   }
 }
 
 .p-artist{
@@ -655,6 +788,8 @@ img.card-img-top{
 @include margins;
  @include media-down(md) {
  	overflow-x: hidden;}
+@include media-down(xs) {
+  overflow-x: hidden;}
 }
 
 .p1-news{
@@ -665,6 +800,14 @@ img.card-img-top{
   text-align: left;
   margin-bottom: 40px;
   margin-top: 30px;
+   @include media-down(sm) {
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+   @include media-down(xs) {
+     overflow-x: hidden;
+     padding-left: 30px;
+    padding-right: 15px;}
 }
 
 .p1-more{
@@ -674,6 +817,12 @@ img.card-img-top{
   line-height: auto;
   float: right;
   text-align: right;
+   @include media-down(sm) {
+  padding-right: 30px;
+  }
+   @include media-down(xs) {
+  padding-right: 28px;
+  }
 }
 
 .paragraph{
@@ -688,6 +837,12 @@ height: 2px;
 content: "";
 margin: 20px auto;
 text-align: center;
+ @include media-down(sm) {
+   width: 480px;
+  }
+  @include media-down(xs) {
+   width: 280px;
+  }
 }
 
 .date-number1{
@@ -736,6 +891,10 @@ text-align: center;
     padding-left: 40px;
     margin-top: 116px;
   }
+  @include media-down(sm) {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
 }
 
 .dsgn{
@@ -774,6 +933,9 @@ margin: 15px 0px 15px 0px;
   margin-top: 80px;
   text-align: center;
   @include margins;
+  @include media-down(sm) {
+    overflow-x: hidden;;
+  }
 }
 
 .client{
@@ -790,6 +952,13 @@ margin: 15px 0px 15px 0px;
   margin-bottom: 90px;
  @include margins;
   margin-bottom: 60px;
+}
+
+
+.p-client, .p-news{
+  @include media-down(sm) {
+    padding-left: 15px;
+    padding-right: 15px;}
 }
 
 
@@ -826,6 +995,14 @@ margin: 15px 0px 15px 0px;
   font-family: $font-family;
   color: $white;
   line-height: auto;
+  @include media-down(sm) {
+  font-size: 18px;
+  }
+   @include media-down(xs) {
+  font-size: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 
@@ -851,6 +1028,14 @@ margin: 15px 0px 15px 0px;
   max-width: 750px;
 }
 
+.p-contact, p.p-portfolio{
+  @include media-down(sm) {
+    padding-right: 15px;
+    padding-left: 15px;}
+    }
+ 
+
+
 .name-class, .name-mail, .name-message{
   font-size: 15px;
   font-family: $font-family-medium;
@@ -868,6 +1053,11 @@ margin-bottom: 90px;
 }
 
 /*form*/
+ .form-group {
+  @include media-down(sm) {
+    padding-left: 20px;
+    padding-right: 20px;}
+} 
 #exampleInputEmail1, #exampleInputEmail2{
 border: 0px;
 border-bottom: 1px solid;
@@ -885,6 +1075,7 @@ position: relative;
 
 .wrapper-input, .wrapper-input-1, .wrapper-input-2{
   position: relative;
+      margin-top: 80px;
 }
 
 
@@ -944,8 +1135,17 @@ input#exampleInputEmail1.form-control.name-class{
 }
 
 
-img-screen{
+img.screen{
 	@include media-down(md) {
 		left: 64%;
 	}
+  @include media-down(sm) { 
+  left: 26%;
+    top: 47%;
+    width: 31%;
+    height: 68%;
+}
+@include media-down(xs) { 
+  left: 41%;
+}
 }

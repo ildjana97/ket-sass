@@ -21,3 +21,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+
+      .parallax .row{
+       @include media-down(xs) {
+        background-color: rgba(0, 0, 0, 0.4);}
+    }

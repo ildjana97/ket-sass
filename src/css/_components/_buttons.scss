@@ -9,7 +9,7 @@ border: 1px solid $white;
 
 a.btn.btn-full, .btn.btn-full {
 	color: $white;
-  border: 1px solid white;
+  border: 1px solid white!important;
 }
 
 a.btn.btn-full:hover {
@@ -29,6 +29,9 @@ button.btn.btn-message {
     padding-left: 30px;
     padding-right: 30px;
     color: $white;
+    @include media-down(sm) {
+    margin-right: 20px;
+  }
 }
 
 .btn.btn-message:hover, a.btn.btn-start:hover, .btn.btn-subscribe:hover {
@@ -114,10 +117,10 @@ button.btn-triangle-active.active:after, .btn-triangle-active.active:after, .btn
 @include important-text;
   background-color: $background-2;
   font-family: $font-family-medium;
-  color: $dark-gray;
+  color: $dark-gray!important;
   padding: 20px 190px!important;
   @include media-down(lg) {
-    padding: 20px 178px;
+    padding: 20px 178px!important;
    }
   @include media-down(md) {
     width: 100%;
@@ -126,11 +129,12 @@ button.btn-triangle-active.active:after, .btn-triangle-active.active:after, .btn
   }
   @include media-down(sm) {
     width: 100%;
-    padding: 20px 30px;
+    padding: 20px 22px!important;
   }
-  @include media-down(x-sm) {
+  @include media-down(xs) {
     width: 100%;
-    padding: 20px 22px;
+        padding: 20px 8px;
+        font-size: 14px!important;
   }
 }
 
@@ -140,6 +144,9 @@ background-color: $background-2;
 color: $light-blue;
 border: 1px solid $light-blue;
 padding: 15px 40px;
+@include media-down(xs) {
+    padding: 10px 10px;
+  }
 }
 
 .btn-all, .btn-web, .btn-photo, .btn-gd{
@@ -147,11 +154,16 @@ padding: 15px 40px;
   font-size: 13px!important;
   font-family: $font-family!important;
   line-height: auto;
-  border: 0px;
   margin-top: 80px;
   margin-bottom: 80px;
   padding: 20px 30px!important;
   border: 0px!important;
+  @include media-down(sm) {
+    padding: 20px 12px;
+  }
+  @include media-down(xs) {
+    padding: 20px 0px!important;
+  }
 
 }
 
@@ -159,7 +171,8 @@ padding: 15px 40px;
 .btn-web:hover, 
 .btn-photo:hover, 
 .btn-gd:hover{
- border: 1px solid $light-blue!important;
+ border: 2px solid $light-blue!important;
+ transition: 0s;
 }
 
 
@@ -193,3 +206,11 @@ button.btn.btn-primary{
   cursor: pointer;
   margin-bottom: 170px;
 }
+
+
+/*
+.btn.focus, .btn:focus {
+    outline: 0px!important;
+    box-shadow: 0px!important;}
+
+*/
