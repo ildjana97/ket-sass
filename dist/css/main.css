@@ -689,7 +689,7 @@ strong {
   background-size: cover; }
 
 .ket-text-box {
-  background-color: transparent !important;
+  background-color: transparent;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -698,7 +698,7 @@ strong {
 
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1172px; } }
+    max-width: 600px; } }
 
 .bannertitle {
   color: #ffffff;
@@ -5074,6 +5074,13 @@ header {
   width: 135px;
   height: auto; }
 
+.logo-text {
+  color: #3f4244;
+  font-size: 35px; }
+
+.eight {
+  color: #00e1ff; }
+
 .container-custom {
   padding: 0px; }
 
@@ -5237,6 +5244,17 @@ footer {
 
 .kat {
   color: #00e1ff; }
+
+.rubik {
+  font-size: 15px;
+  font-family: "Raleway Medium", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: -35px;
+  padding-bottom: 14px; }
 
 /*
 * Main
